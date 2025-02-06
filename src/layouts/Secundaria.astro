@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>Area 96</title>
+	</head>
+	<body class="bg-black text-white">
+		<div  class="flex flex-col h-full justify-between">
+			<header class="text-center bg-black fixed w-full z-20 border-b-1">
+				<a href="/" class="titulo text-5xl md:text-8xl">AREA 96</a>
+				<div>
+					<menu class="flex justify-center gap-5">
+						<li>
+							<a href="https://chat.whatsapp.com/Bygk6I4N3A8EBRbLquIjGo" target="_blank" class="titulo hover:text-red-700">ÚNETE</a>
+						</li>
+						<li>
+							<a href="normativa" class="titulo hover:text-red-700">NORMATIVA</a>
+						</li>
+						<li>
+							<a href="https://www.google.com/maps/place/37%C2%B020'16.0%22N+5%C2%B048'04.2%22W/@37.337504,-5.801031,15z/data=!4m4!3m3!8m2!3d37.3377778!4d-5.8011667?hl=es&entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="titulo hover:text-red-700">COMO LLEGAR</a>
+						</li>
+						<li>
+							<a href="https://drive.google.com/drive/folders/1w8jIgx8dOxtWstOGWe4QVooC0_H0hc0O?usp=drive_link" target="_blank" class="titulo hover:text-red-700">GALERIA</a>
+						</li>
+					</menu>
+			</header>
+			<main class="pt-[70px] md:pt-[121px]">
+				<slot />
+			</main>
+			<footer  class="text-center bg-black z-20 border-t-1">
+				<p>© 2025 Area 96</p>
+			</footer>
+		</div>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.titulo {
+  font-family: "Russo One", serif;
+  font-weight: 400;
+  font-style: normal;
+	}
+</style>
