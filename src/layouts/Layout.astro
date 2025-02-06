@@ -4,11 +4,39 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>Area 96</title>
 	</head>
-	<body>
-		<slot />
+	<body class="bg-black text-white">
+		<div  class="flex flex-col h-full justify-between">
+			<header class="text-center border-b-1">
+				<a href="/" class="text-8xl">AREA 96</a>
+				<div>
+					<menu class="flex justify-center gap-5">
+						<li>
+							<a href="https://chat.whatsapp.com/Bygk6I4N3A8EBRbLquIjGo" target="_blank">ÚNETE</a>
+						</li>
+						<li>
+							<a href="normativa">NORMATIVA</a>
+						</li>
+						<li>
+							<a href="">COMO LLEGAR</a>
+						</li>
+						<li>
+							<a href="https://drive.google.com/drive/folders/1w8jIgx8dOxtWstOGWe4QVooC0_H0hc0O?usp=drive_link" target="_blank">GALERIA</a>
+						</li>
+					</menu>
+			</header>
+			<main>
+				<slot />
+			</main>
+			<footer  class="text-center border-t-1">
+				<p>PIE DE PAGINA</p>
+			</footer>
+		</div>
 	</body>
 </html>
 
@@ -19,4 +47,10 @@
 		width: 100%;
 		height: 100%;
 	}
+	a	{
+  font-family: "Russo One", serif;
+  font-weight: 400;
+  font-style: normal;
+	}
+
 </style>
