@@ -1,0 +1,7 @@
+---
+import "../styles/global.css"
+const {paypalUrl, planType} = Astro.props
+
+---
+
+<a href={`${paypalUrl}`} class="bg-yellow-300 rounded-lg py-2 text-center font-bold min-w-50">{planType}</a>
